@@ -13,7 +13,7 @@ from flask import Flask, request, render_template_string
 from markupsafe import Markup, escape
 
 app = Flask(__name__)
-AUTORES = "Israel Dias"  # <- edite: nomes do grupo
+AUTORES = "Israel Dias,Davi Evangelista, Elyas Douglas, Antonio Rosa, Higo Yves"  # <- edite: nomes do grupo
 MAX = 6                  # tamanho maximo das matrizes (6x6)
 
 
@@ -388,7 +388,7 @@ table{border-collapse:collapse}.tb td,.tb th{border:1px solid #cfc8b8;padding:.4
 <header><b>▦ Matrizes: A Arquitetura dos Dados</b>
 <nav><a href="/" class="{{'on' if ativo=='t'}}">Teoria</a><a href="/calculadora" class="{{'on' if ativo=='c'}}">Calculadora</a></nav></header>
 <main>{{ corpo }}</main>
-<footer>Projeto Extensionista e Integrador · ADS — Análise e Desenvolvimento de Software<br>{{ autores }}</footer></body></html>"""
+<footer>Matemática Aplicada · ADS — Análise e Desenvolvimento de Software<br>{{ autores }}</footer></body></html>"""
 
 TEORIA = """
 <div class="hero"><h1>Matrizes: A Arquitetura dos Dados</h1><p>Fundamentos, taxonomia e mecânica da álgebra matricial · Determinantes, Laplace, Jacobi e Chió</p>
